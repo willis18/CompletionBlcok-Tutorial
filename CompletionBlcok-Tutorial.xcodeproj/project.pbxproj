@@ -13,9 +13,11 @@
 		1A72338B25F7615900873E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72338925F7615900873E15 /* Main.storyboard */; };
 		1A72338D25F7615B00873E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A72338C25F7615B00873E15 /* Assets.xcassets */; };
 		1A72339025F7615B00873E15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A72338E25F7615B00873E15 /* LaunchScreen.storyboard */; };
+		AF8BF066B7993A4FD01B44DA /* Pods_CompletionBlcok_Tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05BE56E1279007B9343CC6A5 /* Pods_CompletionBlcok_Tutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05BE56E1279007B9343CC6A5 /* Pods_CompletionBlcok_Tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CompletionBlcok_Tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A72338025F7615900873E15 /* CompletionBlcok-Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CompletionBlcok-Tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A72338325F7615900873E15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A72338525F7615900873E15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		1A72338C25F7615B00873E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A72338F25F7615B00873E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A72339125F7615B00873E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D010F04A4C8F9260C3648DA /* Pods-CompletionBlcok-Tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompletionBlcok-Tutorial.debug.xcconfig"; path = "Target Support Files/Pods-CompletionBlcok-Tutorial/Pods-CompletionBlcok-Tutorial.debug.xcconfig"; sourceTree = "<group>"; };
+		964F2410B80CB2F562329D11 /* Pods-CompletionBlcok-Tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompletionBlcok-Tutorial.release.xcconfig"; path = "Target Support Files/Pods-CompletionBlcok-Tutorial/Pods-CompletionBlcok-Tutorial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8BF066B7993A4FD01B44DA /* Pods_CompletionBlcok_Tutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				1A72338225F7615900873E15 /* CompletionBlcok-Tutorial */,
 				1A72338125F7615900873E15 /* Products */,
+				70234606381FF7C3DC89B65D /* Pods */,
+				25BE73BDDBD3B58A02ABACBA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "CompletionBlcok-Tutorial";
 			sourceTree = "<group>";
 		};
+		25BE73BDDBD3B58A02ABACBA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05BE56E1279007B9343CC6A5 /* Pods_CompletionBlcok_Tutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70234606381FF7C3DC89B65D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D010F04A4C8F9260C3648DA /* Pods-CompletionBlcok-Tutorial.debug.xcconfig */,
+				964F2410B80CB2F562329D11 /* Pods-CompletionBlcok-Tutorial.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A72339425F7615B00873E15 /* Build configuration list for PBXNativeTarget "CompletionBlcok-Tutorial" */;
 			buildPhases = (
+				9FB3523EA4324BEB11885D74 /* [CP] Check Pods Manifest.lock */,
 				1A72337C25F7615900873E15 /* Sources */,
 				1A72337D25F7615900873E15 /* Frameworks */,
 				1A72337E25F7615900873E15 /* Resources */,
+				78330793D5455C6CB72C7F36 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		78330793D5455C6CB72C7F36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompletionBlcok-Tutorial/Pods-CompletionBlcok-Tutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CompletionBlcok-Tutorial/Pods-CompletionBlcok-Tutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CompletionBlcok-Tutorial/Pods-CompletionBlcok-Tutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FB3523EA4324BEB11885D74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CompletionBlcok-Tutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A72337C25F7615900873E15 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		1A72339525F7615B00873E15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D010F04A4C8F9260C3648DA /* Pods-CompletionBlcok-Tutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		1A72339625F7615B00873E15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964F2410B80CB2F562329D11 /* Pods-CompletionBlcok-Tutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
